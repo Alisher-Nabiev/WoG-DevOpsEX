@@ -1,4 +1,3 @@
-#def memory_game:
 #def currency_roulette:
 import random
 from Live import load_game
