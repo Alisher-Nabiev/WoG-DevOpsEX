@@ -14,7 +14,6 @@ def load_game():
         "3. Currency Roulette - try and guess the value of a random amount of USD in ILS.\n"
           )
     game_number = int(input("Please chose your game by typing a number of the game: "))
-    game_difficulty = 0
 
     if 3 >= game_number >= 1:
         game_difficulty = int(input("Please choose game difficulty from 1 to 5: "))
