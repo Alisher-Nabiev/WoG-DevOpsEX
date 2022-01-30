@@ -4,6 +4,7 @@ from Live import load_game, welcome
 import GuessGame
 import MemoryGame
 import CurrencyRouletteGame
+import Score
 
 username = welcome(input("Hello user please enter your name here: "))
 
@@ -21,5 +22,6 @@ elif game_number == 1:
 
 else:
     CurrencyRouletteGame.crg_game(game_diff)
+
 
 

@@ -1,6 +1,6 @@
 import time
 import random
-
+import Score
 
 def memory_game(mg_dif):
     random_number = []
@@ -23,6 +23,7 @@ def memory_game(mg_dif):
 
         if user_list == random_number:
             print('correct!')
+            Score.add_score(mg_dif)
         else:
             print('incorrect!!!, try again.', time.sleep(0.70))
             memory_game(1)
@@ -44,6 +45,7 @@ def memory_game(mg_dif):
 
         if user_list == random_number:
             print('correct!')
+            Score.add_score(mg_dif)
         else:
             print('incorrect!!!, try again.', time.sleep(0.70))
             memory_game(2)
@@ -65,6 +67,7 @@ def memory_game(mg_dif):
 
             if user_list == random_number:
                 print('correct!')
+                Score.add_score(mg_dif)
             else:
                 print('incorrect!!!, try again.', time.sleep(0.70))
                 memory_game(3)
@@ -86,6 +89,7 @@ def memory_game(mg_dif):
 
                 if user_list == random_number:
                     print('correct!')
+                    Score.add_score(mg_dif)
                 else:
                     print('incorrect!!!, try again.', time.sleep(0.70))
                     memory_game(4)
@@ -107,6 +111,7 @@ def memory_game(mg_dif):
 
                     if user_list == random_number:
                         print('correct!')
+                        Score.add_score(mg_dif)
                     else:
                         print('incorrect!!!, try again.', time.sleep(0.70))
                         memory_game(5)

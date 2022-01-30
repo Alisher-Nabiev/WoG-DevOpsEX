@@ -1,6 +1,7 @@
 #def currency_roulette:
 import random
 from Live import load_game
+import Score
 def guess_game(gg_dif):
 
     if gg_dif == 1:
@@ -8,6 +9,7 @@ def guess_game(gg_dif):
         user_gg_number = int(input("please enter number betwin 1-20: "))
         if secret_number == user_gg_number:
             print("\ncorrect you guess the number!!")
+            Score.add_score(gg_dif)
         elif user_gg_number < 1 or user_gg_number > 20:
             print("\nplease enter number bettwin 1-20: ", guess_game(1))
         else:
@@ -18,6 +20,7 @@ def guess_game(gg_dif):
         user_gg_number = int(input("please enter number betwin 1-40: "))
         if secret_number == user_gg_number:
             print("\ncorrect you guess the number!!")
+            Score.add_score(gg_dif)
         elif user_gg_number < 1 or user_gg_number > 40:
             print("\nplease enter number bettwin 1-40: ", guess_game(2))
         else:
@@ -28,6 +31,7 @@ def guess_game(gg_dif):
         user_gg_number = int(input("please enter number betwin 1-60: "))
         if secret_number == user_gg_number:
             print("\ncorrect you guess the number!!")
+            Score.add_score(gg_dif)
         elif user_gg_number < 1 or user_gg_number > 60:
             print("\nplease enter number bettwin 1-60: ", guess_game(3))
         else:
@@ -38,6 +42,7 @@ def guess_game(gg_dif):
         user_gg_number = int(input("please enter number betwin 1-80: "))
         if secret_number == user_gg_number:
             print("\ncorrect you guess the number!!")
+            Score.add_score(gg_dif)
         elif user_gg_number < 1 or user_gg_number > 80:
             print("\nplease enter number bettwin 1-80: ", guess_game(4))
         else:
@@ -48,6 +53,7 @@ def guess_game(gg_dif):
         user_gg_number = int(input("please enter number betwin 1-100: "))
         if secret_number == user_gg_number:
             print("\ncorrect you guess the number!!")
+            Score.add_score(gg_dif)
         elif user_gg_number < 1 or user_gg_number > 100:
             print("\nplease enter number bettwin 1-100: ", guess_game(5))
         else:
